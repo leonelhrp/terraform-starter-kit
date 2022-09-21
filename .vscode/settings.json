@@ -1,0 +1,56 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "jest.jestCommandLine": "yarn jest",
+  "terminal.integrated.env.osx": {
+    "TF_DATA_DIR": "${workspaceFolder}/.terraform",
+    "TF_CLI_CONFIG_FILE": "${workspaceFolder}/.terraformrc",
+    "TF_WORKSPACE": "test"
+  },
+  "terminal.integrated.env.linux": {
+    "TF_DATA_DIR": "${workspaceFolder}/.terraform",
+    "TF_CLI_CONFIG_FILE": "${workspaceFolder}/.terraformrc",
+    "TF_WORKSPACE": "test"
+  },
+  "terminal.integrated.env.windows": {
+    "TF_DATA_DIR": "${workspaceFolder}\\.terraform",
+    "TF_CLI_CONFIG_FILE": "${workspaceFolder}\\.terraformrc",
+    "TF_WORKSPACE": "test"
+  },
+  "files.associations": {
+    ".terraformrc": "terraform"
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.editorconfig": true,
+    "**/.git": true,
+    "**/.pnp.*": true,
+    "**/.prettierignore": true,
+    "**/.yarn": true,
+    "**/infra/.terraform.lock.hcl": true,
+    "**/LICENSE": true,
+    "**/Thumbs.db": true,
+    "**/yarn.lock": true
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  }
+}
